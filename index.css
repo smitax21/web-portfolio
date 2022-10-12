@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #373535;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* -------------------First container----------------------- */
+.ab {
+  margin: auto;
+  width: 10vw;
+}
+
+a:link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.side-bar {
+  background-color: 31313A;
+  color: white;
+  text-align: center;
+  align-items: center;
+  row-gap: 1em;
+}
+
+i {
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.side-bar:hover,
+i:hover {
+  color: orange;
+}
+
+.modify-navbar {
+  background-color: #464646;
+  height: 80vh;
+  width: auto;
+  row-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 20% 0 20% 20%;
+}
+
+/* --------------second container------------------ */
+.b {
+  margin: auto;
+  height: 80vh;
+  background-color: #373535;
+}
+
+.card-container {
+  background-color: #464646;
+}
+
+.modify-card-img {
+  height: 15rem;
+}
+
+.modify-pic-allign {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: -100px;
+}
+
+.profile-picture img {
+  position: absolute;
+}
+
+p,
+h5 {
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title,
+.active {
+  color: orange;
+}
+
+.fa-fa-modify {
+  justify-content: space-around;
+}
+
+/* Third container */
+.c {
+  margin: auto;
+  height: 80vh;
+  background-color: #464646;
+  overflow: auto;
+}
+
+.about-page {
+  padding: 5%;
+}
+
+.hide {
+  display: none;
+}
+
+/* media queries */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .side-bar {
+    background-color: 31313A;
+
+    text-align: center;
+    align-items: center;
+  }
+}
