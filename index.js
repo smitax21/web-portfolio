@@ -2,10 +2,10 @@ const About = document.getElementById("about");
 const Resume = document.getElementById("resume");
 const Project = document.getElementById("project");
 const Contact = document.getElementById("contact");
-const AboutActive = document.getElementsByClassName("about");
-const AboutResume = document.getElementsByClassName("resume");
-const AboutProject = document.getElementsByClassName("project");
-const AboutContact = document.getElementsByClassName("contact");
+const ActiveAbout = document.getElementsByClassName("about");
+const ActiveResume = document.getElementsByClassName("resume");
+const ActiveProject = document.getElementsByClassName("project");
+const ActiveContact = document.getElementsByClassName("contact");
 
 About.addEventListener("click", openAbout);
 Resume.addEventListener("click", openResume);
@@ -21,12 +21,6 @@ function openResume() {
   Project.classList.remove("active");
   Contact.classList.add("hide");
   Contact.classList.remove("active");
-
-  //   -----for current active--------
-  ActiveAbout.classList.remove("active");
-  ActiveResume.classList.add("active");
-  ActiveProject.classList.remove("active");
-  ActiveContact.classList.remove("active");
 }
 
 function openAbout() {
@@ -38,12 +32,6 @@ function openAbout() {
   Project.classList.remove("active");
   Contact.classList.add("hide");
   Contact.classList.remove("active");
-
-  //   -----for current active--------
-  ActiveAbout.classList.add("active");
-  ActiveResume.classList.remove("active");
-  ActiveProject.classList.remove("active");
-  ActiveContact.classList.remove("active");
 }
 function openProject() {
   Project.classList.remove("hide");
@@ -54,12 +42,6 @@ function openProject() {
   About.classList.remove("active");
   Contact.classList.add("hide");
   Contact.classList.remove("active");
-
-  //   -----for current active--------
-  ActiveAbout.classList.remove("active");
-  ActiveResume.classList.remove("active");
-  ActiveProject.classList.add("active");
-  ActiveContact.classList.remove("active");
 }
 function openContact() {
   Contact.classList.remove("hide");
@@ -70,10 +52,4 @@ function openContact() {
   Project.classList.remove("active");
   About.classList.add("hide");
   About.classList.remove("active");
-
-  //   -----for current active--------
-  ActiveAbout.classList.remove("active");
-  ActiveResume.classList.remove("active");
-  ActiveProject.classList.remove("active");
-  ActiveContact.classList.add("active");
 }

@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #373535;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main-container {
   display: flex;
   justify-content: space-around;
-  height: 100vh;
-  width: 100vw;
 }
 
 /* -------------------First container----------------------- */
@@ -60,6 +60,7 @@ i:hover {
 
 .card-container {
   background-color: #464646;
+  margin: 0;
 }
 
 .modify-card-img {
@@ -92,6 +93,10 @@ h5 {
   text-align: center;
 }
 
+.title {
+  color: orange;
+}
+
 .card-title,
 .active {
   color: orange;
@@ -101,7 +106,7 @@ h5 {
   justify-content: space-around;
 }
 
-/* Third container */
+/*----------------- Third container------------------- */
 .c {
   margin: auto;
   height: 80vh;
@@ -109,8 +114,62 @@ h5 {
   overflow: auto;
 }
 
-.about-page {
+.about-page,
+.resume-page,
+.project-page,
+.contact-page {
   padding: 5%;
+}
+
+.resume-modify {
+  justify-content: space-around;
+}
+
+.resume-p-fonts {
+  font-size: small;
+}
+
+.column1 {
+  border-right: 1px solid black;
+  width: 50%;
+  /* padding: 10px; */
+}
+
+.column2 {
+  width: 50%;
+  /* padding: 10px; */
+}
+
+li {
+  list-style: none;
+}
+
+.modify-project {
+  border-bottom: 1px solid black;
+}
+
+.modify-form {
+  margin-bottom: 2%;
+}
+
+.modify-button:hover {
+  background-color: orange;
+}
+
+footer {
+  background-color: #464646;
+  height: 5vh;
+  vertical-align: 50%;
+}
+
+a {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
 }
 
 .hide {
@@ -119,14 +178,16 @@ h5 {
 
 /* media queries */
 @media only screen and (max-width: 800px) {
-  body {
-    background-color: lightblue;
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: 31313A;
+    text-align: center;
+    align-items: center; */
   }
 
-  .side-bar {
-    background-color: 31313A;
-
-    text-align: center;
-    align-items: center;
+  .modify-navbar {
+    flex-direction: row;
   }
 }

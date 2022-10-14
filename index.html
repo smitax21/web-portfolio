@@ -21,104 +21,241 @@
     <title>Web-Portfolio</title>
   </head>
   <body>
-    <div class="main-container">
-      <!-- Navbar -->
-      <div class="ab" style="flex-grow: 1">
-        <nav class="nav navbar flex-column modify-navbar">
-          <a
-            href="#"
-            class="about side-bar active d-flex flex-column"
-            onclick="openAbout()"
-          >
-            <i class="fas fa-regular fa-lg fa-user active"></i> About
-          </a>
+    <div>
+      <div class="main-container">
+        <!-- Navbar -->
+        <div class="ab" style="flex-grow: 1">
+          <nav class="nav navbar flex-column modify-navbar">
+            <a
+              href="#"
+              class="about side-bar d-flex flex-column active"
+              onclick="openAbout()"
+            >
+              <i class="fas fa-regular fa-lg fa-user active"></i> About
+            </a>
 
-          <a
-            href="#"
-            class="resume side-bar d-flex flex-column"
-            onclick="openResume()"
-            ><i class="fas fa-regular fa-lg fa-file"></i> Resume</a
-          >
+            <a
+              href="#"
+              class="resume side-bar d-flex flex-column"
+              onclick="openResume()"
+              ><i class="fas fa-regular fa-lg fa-file"></i> Resume</a
+            >
 
-          <a
-            href="#"
-            class="project side-bar d-flex flex-column"
-            onclick="openProject()"
-            ><i class="fas fa-regular fa-lg fa-paintbrush"></i> Project</a
-          >
+            <a
+              href="#"
+              class="project side-bar d-flex flex-column"
+              onclick="openProject()"
+              ><i class="fas fa-regular fa-lg fa-paintbrush"></i> Project</a
+            >
 
-          <a
-            href="#"
-            class="contact side-bar d-flex flex-column"
-            onclick="openContact()"
-            ><i class="fas fa-regular fa-lg fa-phone"></i> Contact</a
-          >
-        </nav>
-      </div>
-      <!-- second container -->
-      <div class="b col d-flex justify-content-center" style="flex-grow: 7">
-        <div class="card card-container" style="width: 30rem">
-          <img class="card-img-top modify-card-img" src="img/1.jfif" alt="DP" />
-          <div class="modify-pic-allign">
-            <img class="profile-picture" src="./img/code.png" alt="code" />
-          </div>
-          <div class="card-body modify-card">
-            <h5 class="card-title">SMITA PANDYA</h5>
-            <p>Software Developer</p>
-            <p class="card-text"></p>
-            <div class="d-flex flex-row fa-fa-modify">
-              <a href=""
-                ><i class="fas fa-brands fa-instagram modify-fa"></i
-              ></a>
-              <a href=""
-                ><i class="fas fa-brands fa-facebook-f modify-fa"></i
-              ></a>
-              <a href="https://github.com/smitax21"
-                ><i class="fas fa-brands fa-github modify-fa"></i
-              ></a>
-              <a href=""><i class="fas fa-brands fa-twitter modify-fa"></i></a>
-              <a href=""> <i class="fas fa-solid fa-envelope modify-fa"></i></a>
+            <a
+              href="#"
+              class="contact side-bar d-flex flex-column"
+              onclick="openContact()"
+              ><i class="fas fa-regular fa-lg fa-phone"></i> Contact</a
+            >
+          </nav>
+        </div>
+        <!-- second container -->
+        <div
+          class="b col justify-content-center"
+          style="flex-grow: 7; width: 30rem"
+        >
+          <div class="card card-container">
+            <img
+              class="card-img-top modify-card-img"
+              src="img/background.jfif"
+              alt="DP"
+            />
+            <div class="modify-pic-allign">
+              <img class="profile-picture" src="./img/code.png" alt="code" />
+            </div>
+            <div class="card-body modify-card">
+              <h5 class="card-title">SMITA PANDYA</h5>
+              <p>Software Developer</p>
+              <p class="card-text"></p>
+              <div class="d-flex flex-row fa-fa-modify">
+                <a href="https://www.instagram.com/keysmita/"
+                  ><i class="fas fa-brands fa-instagram modify-fa"></i
+                ></a>
+                <a href="https://www.facebook.com/smita/"
+                  ><i class="fas fa-brands fa-facebook-f modify-fa"></i
+                ></a>
+                <a href="https://github.com/smitax21"
+                  ><i class="fas fa-brands fa-github modify-fa"></i
+                ></a>
+                <a href="https://twitter.com/smitax21"
+                  ><i class="fas fa-brands fa-twitter modify-fa"></i
+                ></a>
+                <a href="">
+                  <i class="fas fa-solid fa-envelope modify-fa"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Third container -->
+        <div
+          class="c col justify-content-center"
+          style="flex-grow: 7; width: 30rem"
+        >
+          <!-- About Page -->
+          <div id="about" class="text-center about-page">
+            <h5 class="title">ABOUT ME</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h5 class="title">HOBIES</h5>
+            <p>Dance, Travelling, Sleeping, Watching movies</p>
+          </div>
+
+          <!-- Resume -->
+          <div id="resume" class="text-center resume-page hide">
+            <h5 class="title">RESUME</h5>
+            <div class="d-flex flex-row resume-modify">
+              <div class="column1">
+                <h6>Education</h6>
+                <ul>
+                  <li>Master in Commerce</li>
+                  <p class="resume-p-fonts">
+                    <span
+                      ><img
+                        src="/img/GU-logo.png"
+                        alt="GU"
+                        height="50px"
+                        width="50px"
+                        class="responsive" /></span
+                    >Gauhati University<br />
+                    2011-2016
+                  </p>
+                  <br />
+
+                  <li>MSc Computing</li>
+                  <p class="resume-p-fonts">
+                    <span
+                      ><img
+                        src="/img/shu.png"
+                        alt="shu"
+                        height="40px"
+                        width="40px"
+                        class="responsive" /></span
+                    >Sheffield Hallam University<br />2022-2023
+                  </p>
+                </ul>
+              </div>
+              <div class="column2">
+                <h6>Experience</h6>
+                <ul>
+                  <li>
+                    <p>
+                      <span
+                        ><img
+                          src="/img/TDA.png"
+                          alt="tda"
+                          height="40px"
+                          width="40px"
+                          class="responsive"
+                      /></span>
+                      Full Stack Trainee<br />
+                      sep 2022-present
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center mt-0">
+              <h6 class="title">Tech Stack :</h6>
+              <p style="font-family: Amatic SC, cursive">
+                HTML, CSS, Javascript, C#, PHP
+              </p>
+            </div>
+          </div>
+
+          <!------------------ Project -------------------------->
+          <div id="project" class="text-center project-page hide">
+            <h5 class="title">PROJECTS</h5>
+
+            <div class="d-flex flex-column">
+              <ul>
+                <li class="modify-project">
+                  <a href="https://smitax21.github.io/Gauhati-University/"
+                    >Gauhati University Page
+                  </a>
+                  <p>
+                    This is a static HTML page where I have used HTML and CSS. I
+                    have also used Bootstrap to make the screen responsive.
+                  </p>
+                </li>
+                <li class="modify-project">
+                  <a href="https://smitax21.github.io/Quiz/">Quiz</a>
+                  <p>
+                    This is javascript project where i have used vanilla JS to
+                    click, iterate, count the scores, and hide & unhiding the
+                    div.
+                  </p>
+                </li>
+                <li class="modify-project">
+                  <a href="https://smitax21.github.io/the-game/"
+                    >The Text Game</a
+                  >
+                  <p>
+                    This is a text game where I have used OOP to link between
+                    different classes. In this game, I have done linking with
+                    different room, when they reach to some specific room, the
+                    characters do some actions like communication.
+                  </p>
+                </li>
+                <li class="modify-project">
+                  <a href="https://smitax21.github.io/ceaser-cipher/"
+                    >Ceaser-Cipher</a
+                  >
+                  <p>
+                    This is a Ceaser-Cipher where we can encrypt and decrypt any
+                    code. I have used Vanilla JS to do all the functionalities.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!------------------- Contact --------------------------->
+          <div id="contact" class="text-center contact-page hide">
+            <h5 class="title">CONTACT</h5>
+            <p>Thanks for connecting <i class="fas fa-solid fa-mug-hot"></i></p>
+            <form class="mb-3 row-gap">
+              <input
+                class="form-control modify-form"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <input
+                class="form-control modify-form"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <textarea
+                class="form-control modify-form"
+                placeholder="Type your message...."
+              ></textarea>
+              <button class="modify-button">Send</button>
+            </form>
+          </div>
+        </div>
       </div>
-
-      <!-- Third container -->
-      <div class="c" style="flex-grow: 7; width: 30rem">
-        <!-- About Page -->
-        <div id="about" class="text-center about-page">
-          <h5>ABOUT ME</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <h5>HOBIES</h5>
-          <p>Dance, Travelling, Sleeping, Watching movies</p>
-        </div>
-
-        <!-- Resume -->
-        <div id="resume" class="text-center resume-page hide">
-          <h5>RESUME</h5>
-        </div>
-
-        <!-- Project -->
-        <div id="project" class="text-center project-page hide">
-          <h5>PROJECTS</h5>
-        </div>
-
-        <!-- Contact -->
-        <div id="contact" class="text-center contact-page hide">
-          <h5>CONTACT</h5>
-        </div>
-      </div>
+      <footer class="text-center text-lg-start text-muted">
+        Twenty-Twenty-Two
+      </footer>
     </div>
-
-    <!------------------------------------------------ Js------------------------- -->
+    <!---------------------- Js------------------------- -->
     <script src="index.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
