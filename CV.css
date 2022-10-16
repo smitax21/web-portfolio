@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fas {
+  color: black;
+}
+
+.contact {
+  float: right;
+  font-size: small;
+  margin-top: -50px;
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}

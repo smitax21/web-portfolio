@@ -11,6 +11,10 @@ body {
   justify-content: space-around;
 }
 
+.title {
+  margin: 2rem;
+}
+
 /* -------------------First container----------------------- */
 .ab {
   margin: auto;
@@ -110,8 +114,10 @@ h5 {
 .c {
   margin: auto;
   height: 80vh;
+  flex-wrap: wrap;
   background-color: #464646;
-  overflow: auto;
+  /* overflow: auto; */
+  overflow-y: scroll;
 }
 
 .about-page,
@@ -122,22 +128,15 @@ h5 {
 }
 
 .resume-modify {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .resume-p-fonts {
   font-size: small;
 }
 
-.column1 {
-  border-right: 1px solid black;
-  width: 50%;
-  /* padding: 10px; */
-}
-
-.column2 {
-  width: 50%;
-  /* padding: 10px; */
+.modify-stack {
+  margin-top: 2rem;
 }
 
 li {
@@ -146,6 +145,7 @@ li {
 
 .modify-project {
   border-bottom: 1px solid black;
+  margin: 2rem 0;
 }
 
 .modify-form {
@@ -177,17 +177,33 @@ a:hover {
 }
 
 /* media queries */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
   .main-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
-    /* background-color: 31313A;
-    text-align: center;
-    align-items: center; */
   }
 
   .modify-navbar {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .resume-modify {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* flex-wrap: wrap; */
+  }
+
+  h6,
+  li {
+    color: orange;
   }
 }
